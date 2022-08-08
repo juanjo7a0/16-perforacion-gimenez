@@ -1,0 +1,32 @@
+div p {
+    width: 100%;
+    background: orange;
+    font-size: 20px;
+}
+
+@for $numero form 1 to 10 {
+    .box_# {$numero} {
+    width: (ancho * $numero);
+    height: (alto * 1);
+    background: tomato;
+    margin: 10px;
+    }
+}
+
+$ancho: 700px;
+$alto: 500px;
+
+.box_1 {
+    width: (ancho * 1);
+    height: (alto * 1);
+    background: tomato;
+    margin: 10px;
+}
+.box_2 {
+    width: (ancho * 2);
+    height: (alto * 2);
+    margin: 10px;
+    background: tomato;
+    margin: 10px;
+}
+
